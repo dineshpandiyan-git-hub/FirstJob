@@ -9,42 +9,46 @@ Unlike traditional job portals that rely heavily on manual screening, FirstJob i
 Platform Overview
 
 For Recruiters
-- Post and manage job openings through a dedicated dashboard  
-- Define required skills and job descriptions  
-- Review applicants with match percentage scores  
-- Accept / Reject candidates efficiently  
+
+• Post and manage job openings through a dedicated dashboard
+• Define required skills and job descriptions
+• Review applicants with match percentage scores
+• Accept / Reject candidates efficiently
 
 For Job Seekers
-- Browse available job opportunities  
-- Upload resumes in PDF format  
-- Instantly receive skill-based match percentage  
-- Track application status (Accepted / Rejected)  
+
+• Browse available job opportunities
+• Upload resumes in PDF format
+• Instantly receive skill-based match percentage
+• Track application status (Accepted / Rejected)
 
 Features
-- Recruiter dashboard to post and manage job listings  
-- Fresher-friendly job search interface  
-- Secure PDF resume upload system  
-- Intelligent resume skill extraction  
-- Automated job-resume matching score calculation  
-- Accept / Reject candidate workflow  
-- Application status tracking  
-- Clean, modern, responsive UI    
+
+• Recruiter dashboard to post and manage job listings
+• Fresher-friendly job search interface
+• Secure PDF resume upload system
+• Intelligent resume skill extraction
+• Automated job-resume matching score calculation
+• Accept / Reject candidate workflow
+• Application status tracking
+• Clean, modern, responsive UI
 
 FirstJob uses intelligent rule-based matching logic
-- Analyze resume content  
-- Extract relevant skills  
-- Compare extracted skills with job requirements  
-- Calculate a job eligibility percentage score  
+
+• Analyze resume content
+• Extract relevant skills
+• Compare extracted skills with job requirements
+• Calculate a job eligibility percentage score
 
 Technology Stack
-- Backend: Python & Django  
-- Database: MySQL  
-- Resume Processing: PDF Text Extraction  
-- Matching Engine: Skill-based Scoring Algorithm  
-- Frontend: HTML & CSS  
-- Version Control: Git & GitHub  
 
-Vision
+• Backend: Python & Django
+• Database: MySQL
+• Resume Processing: PDF Text Extraction
+• Matching Engine: Skill-based Scoring Algorithm
+• Frontend: HTML & CSS
+• Version Control: Git & GitHub
+
 The vision of FirstJob is to simplify the hiring journey for freshers by introducing intelligent automation into recruitment workflows. It aims to bridge the gap between talent and opportunity by ensuring candidates are evaluated based on their skills and potential rather than manual screening alone.
 
-Created By Dinesh Pandiyan
+Created By Dinesh Pandiyan ❤️
