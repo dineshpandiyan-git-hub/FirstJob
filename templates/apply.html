@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+.apply-container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.apply-container h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #111 !important;
+}
+
+.apply-container input[type="file"] {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    font-size: 14px;
+    color: #111 !important;
+    margin-bottom: 20px;
+}
+
+.apply-container input[type="file"]::file-selector-button {
+    padding: 8px 14px;
+    margin-right: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #1f8ef1;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.apply-container button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: #1f8ef1;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.apply-container button:hover {
+    background: #0f6fd6;
+}
+</style>
+
+<div class="apply-container">
+    <h2>Apply for {{ job.title }}</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="resume" required>
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+{% endblock %}

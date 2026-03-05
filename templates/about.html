@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+.about-container {
+    max-width: 950px;
+    margin: 70px auto;
+    padding: 40px 20px;
+}
+
+.about-card {
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+/* FORCE TEXT VISIBILITY */
+.about-card * {
+    color: #111 !important;
+}
+
+.about-card h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #1f8ef1 !important;
+}
+
+.project-tagline {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #555 !important;
+}
+
+.section-title {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #1f8ef1 !important;
+}
+
+.about-card p {
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.feature-list {
+    margin-left: 20px;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+}
+
+.creator-box {
+    margin-top: 45px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #f4f9ff;
+    border-left: 5px solid #1f8ef1;
+}
+</style>
+
+<div class="about-container">
+    <div class="about-card">
+
+        <h2>FirstJob</h2>
+        <p class="project-tagline">
+            An AI-Powered Job Matching Platform for Freshers
+        </p>
+
+        <p>
+            FirstJob is a modern AI-powered recruitment platform designed specifically 
+            for fresh graduates and entry-level job seekers. The system intelligently 
+            connects recruiters and candidates using automated resume analysis and 
+            smart skill-based matching algorithms.
+        </p>
+
+        <p>
+            Unlike traditional job portals that rely heavily on manual screening, 
+            FirstJob introduces intelligent automation to evaluate resumes, compare 
+            required job skills, and generate match scores instantly — helping recruiters 
+            make faster and more data-driven hiring decisions.
+        </p>
+
+        <div class="section-title">🌐 Platform Overview</div>
+
+        <p>
+            Recruiters can post and manage job openings through a dedicated dashboard. 
+            Each job listing includes required skills, descriptions, and role information.
+        </p>
+
+        <p>
+            Freshers can browse available job opportunities, upload their resumes in PDF format, 
+            and instantly receive a match percentage based on how well their skills align 
+            with job requirements.
+        </p>
+
+        <div class="section-title">🚀 Core Features</div>
+
+        <ul class="feature-list">
+            <li>✔ Recruiter dashboard to post and manage job listings</li>
+            <li>✔ Fresher-friendly job search interface</li>
+            <li>✔ Secure PDF resume upload system</li>
+            <li>✔ Intelligent resume skill extraction</li>
+            <li>✔ Automated job-resume matching score calculation</li>
+            <li>✔ Accept / Reject candidate workflow</li>
+            <li>✔ Application status tracking for job seekers</li>
+            <li>✔ Clean, modern and responsive UI design</li>
+        </ul>
+
+        <div class="section-title">🧠 AI & Intelligent Matching</div>
+
+        <p>
+            FirstJob uses intelligent rule-based matching logic to analyze resume content 
+            and compare extracted skills with job requirements. Based on keyword similarity 
+            and skill overlap, the platform generates an eligibility percentage score that 
+            assists recruiters in shortlisting candidates efficiently.
+        </p>
+
+        <div class="section-title">🛠 Technology Stack</div>
+
+        <ul class="feature-list">
+            <li>✔ Python & Django (Backend Framework)</li>
+            <li>✔ MySQL Database</li>
+            <li>✔ PDF Text Extraction for Resume Analysis</li>
+            <li>✔ Skill Matching & Scoring Algorithm</li>
+            <li>✔ HTML & CSS for Frontend UI Design</li>
+        </ul>
+
+        <div class="section-title">🎯 Vision</div>
+
+        <p>
+            The vision of FirstJob is to simplify the hiring journey for freshers by 
+            introducing intelligent automation into recruitment workflows. 
+            It aims to bridge the gap between talent and opportunity by ensuring 
+            candidates are evaluated based on their skills and potential.
+        </p>
+
+        <div class="creator-box">
+            <p>
+                <strong>Created By:</strong> Dinesh
+            </p>
+
+            <p>
+                A passionate Full-Stack Developer dedicated to building intelligent 
+                web applications that combine automation, smart logic, and practical 
+                real-world solutions.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

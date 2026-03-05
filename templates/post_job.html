@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post Job</title>
+</head>
+<body>
+    <h2>Post a Job</h2>
+
+    <form method="POST">
+    {% csrf_token %}
+        <input type="text" name="title" placeholder="Job Title" required><br><br>
+        <textarea name="description" placeholder="Job Description" required></textarea><br><br>
+        <textarea name="required_skills" placeholder="Required Skills (comma separated)" required></textarea><br><br>
+        <button type="submit">Post Job</button>
+    </form>
+</body>
+</html>

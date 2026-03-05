@@ -1,0 +1,22 @@
+<h2>Welcome {{ request.user.username }}</h2>
+<a href="/logout/">Logout</a>
+
+<hr>
+
+<h3>Available Jobs</h3>
+
+{% for job in jobs %}
+    <div style="border:1px solid black; padding:10px; margin:10px;">
+        <b>{{ job.title }}</b><br>
+        {{ job.description }}<br>
+        Skills: {{ job.required_skills }}
+    </div>
+{% empty %}
+    <p>No jobs available</p>
+{% endfor %}
+
+<hr>
+
+{% if not request.user.is_recruiter %}
+    <a href="/become-recruiter/">Become Recruiter</a>
+{% endif %}

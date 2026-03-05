@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Job Portal</title>
+<style>
+body {
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(135deg,#1f8ef1);
+    color:white;
+}
+.sidebar {
+    position:fixed;
+    width:220px;
+    height:100%;
+    background:#ffffff;
+    color:#0f4c81;
+    padding:20px;
+}
+
+.sidebar a {
+    display: block;
+    margin: 15px 0;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0f4c81;
+    background: linear-gradient(145deg, #ffffff, #e6f2ff);
+    border-radius: 10px;
+    transition: all 0.15s ease-in-out;
+    box-shadow:
+        0 4px 0 #b5d8ff,
+        0 6px 12px rgba(0,0,0,0.15);
+}
+
+.sidebar a:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 7px 0 #b5d8ff,
+        0 12px 20px rgba(0,0,0,0.25),
+        0 0 10px #1f8ef1;
+}
+
+.sidebar a:active {
+    transform: translateY(4px);
+}
+
+.sidebar h3 {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 18px 10px;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+}
+
+.content {
+    margin-left:240px;
+    padding:40px;
+    animation:fade 0.6s ease-in-out;
+}
+@keyframes fade {
+    from {opacity:0; transform:translateY(20px);}
+    to {opacity:1; transform:translateY(0);}
+}
+button {
+    padding:10px 20px;
+    background:white;
+    color:#0f4c81;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+.card {
+    background:white;
+    color:#0f4c81;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+</style>
+</head>
+<body>
+
+{% if request.user.is_authenticated %}
+<div class="sidebar">
+    <h3>{{ request.user.username }}</h3>
+    <a href="/choose-role/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/logout/">Logout</a>
+
+</div>
+{% endif %}
+
+<div class="content">
+{% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<h2>Recruiter Panel - {{ request.user.username }}</h2>
+
+<a href="/dashboard/">Back to Dashboard</a> |
+<a href="/logout/">Logout</a>
+
+<hr>
+
+<h3>Post New Job</h3>
+
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="title" placeholder="Job Title" required><br><br>
+    <textarea name="description" placeholder="Description" required></textarea><br><br>
+    <input type="text" name="skills" placeholder="Skills (comma separated)" required><br><br>
+    <button type="submit">Post Job</button>
+</form>
+
+<hr>
+
+<h3>Your Posted Jobs</h3>
+
+{% for job in jobs %}
+    <div style="border:1px solid black; padding:10px; margin:10px;">
+        {{ job.title }}
+    </div>
+{% empty %}
+    <p>You have not posted any jobs</p>
+{% endfor %}

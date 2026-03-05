@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+.card {
+    background: linear-gradient(145deg, #ffffff, #f4f9ff);
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.card form {
+    display: inline-block;
+    margin: 0;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+}
+
+.card button {
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 8px;
+    transition: 0.3s ease;
+    outline: none;
+}
+
+.resume-btn {
+    background: #1f8ef1;
+    color: white;
+}
+
+.resume-btn:hover {
+    background: #1565c0;
+    transform: scale(1.05);
+}
+
+.accept-btn {
+    background: #2e7d32;
+    color: white;
+}
+
+.accept-btn:hover {
+    background: #1b5e20;
+    transform: scale(1.05);
+}
+
+.reject-btn {
+    background: #e53935;
+    color: white;
+}
+
+.reject-btn:hover {
+    background: #c62828;
+    transform: scale(1.05);
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.submitted { background: #fbc02d; color: #000; }
+.accepted { background: #4caf50; color: #fff; }
+.rejected { background: #f44336; color: #fff; }
+
+</style>
+
+<h2>Applicants for {{ job.title }}</h2>
+
+{% for application in applications %}
+<div class="card">
+
+    <p><strong>Name:</strong> {{ application.applicant.username }}</p>
+    <p><strong>Match Score:</strong> {{ application.match_score }}%</p>
+
+    <a href="{{ application.resume.url }}" download class="resume-btn" style="padding:8px 14px; border-radius:10px; font-weight:bold;">
+        Download Resume
+    </a>
+
+    <form method="POST" action="/application/{{ application.id }}/accept/">
+        {% csrf_token %}
+        <button type="submit" class="accept-btn">Accept</button>
+    </form>
+
+    <form method="POST" action="/application/{{ application.id }}/reject/">
+        {% csrf_token %}
+        <button type="submit" class="reject-btn">Reject</button>
+    </form>
+
+    <div>
+        <span class="status-badge 
+            {% if application.status == 'Accepted' %}accepted
+            {% elif application.status == 'Rejected' %}rejected
+            {% else %}submitted
+            {% endif %}">
+            {{ application.status }}
+        </span>
+    </div>
+
+</div>
+
+{% empty %}
+<p>No applicants yet.</p>
+{% endfor %}
+
+{% endblock %}
