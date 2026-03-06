@@ -35,3 +35,41 @@ The vision of FirstJob is to simplify and transform the job search journey for f
 
 Created By
 Dinesh Pandiyan 
+
+Project Screenshots
+
+Home
+![Home](Screenshots/Home.png)
+
+About
+![About](Screenshots/About.png)
+
+Apply Job
+![Apply](Screenshots/Apply.png)
+
+Applicants Page
+![Applicants](Screenshots/Applicants.png)
+
+Login Page
+![Login](Screenshots/Login.png)
+
+Register Page
+![Register](Screenshots/Registor.png)
+
+Job Seeker Dashboard
+![Job Seeker Dashboard](Screenshots/Job Seeker Dashboard.png)
+
+Job Seeker Applications
+![Job Seeker My Applicants](Screenshots/Job Seeker my Applicants.png)
+
+Job Seeker Messages
+![Job Seeker Message](Screenshots/Job Seeker Message.png)
+
+Recruiter Dashboard 1
+![Recruiter Dashboard 1](Screenshots/Recruiter Dashboard 1.png)
+
+Recruiter Dashboard 2
+![Recruiter Dashboard 2](Screenshots/Recruiter Dashboard 2.png)
+
+Recruiter Messages
+![Recruiter Message](Screenshots/Recruiter Message.png)
