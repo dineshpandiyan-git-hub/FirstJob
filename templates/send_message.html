@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+.message-box {
+    background:white;
+    color:#0f4c81;
+    padding:20px;
+    border-radius:12px;
+    max-width:500px;
+}
+textarea {
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    margin-top:10px;
+}
+button {
+    margin-top:10px;
+}
+</style>
+
+<h2>Send Message to {{ application.applicant.username }}</h2>
+
+<div class="message-box">
+<form method="POST">
+{% csrf_token %}
+
+<textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+<br>
+
+<button type="submit">Send Message</button>
+
+</form>
+</div>
+
+{% endblock %}

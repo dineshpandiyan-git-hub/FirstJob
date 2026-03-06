@@ -99,6 +99,10 @@
         <button type="submit" class="reject-btn">Reject</button>
     </form>
 
+    <a href="/send-message/{{ application.id }}/">
+    <button class="resume-btn">Message</button>
+    </a>
+
     <div>
         <span class="status-badge 
             {% if application.status == 'Accepted' %}accepted

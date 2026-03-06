@@ -13,5 +13,7 @@ urlpatterns = [
     path('application/<int:app_id>/<str:action>/', views.update_application_status),
     path('my-applications/', views.my_applications),
     path('about/', views.about_page),
+    path('send-message/<int:application_id>/', views.send_message),
+    path('messages/', views.messages_page),
     path('logout/', views.logout_view),
 ]

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Your Messages</h2>
+
+{% for message in messages %}
+
+<div class="card">
+
+<p><strong>From:</strong> {{ message.sender.username }}</p>
+
+<p><strong>Job:</strong> {{ message.job.title }}</p>
+
+<p>{{ message.message }}</p>
+
+<p style="font-size:12px;">
+{{ message.created_at }}
+</p>
+
+</div>
+
+{% empty %}
+
+<p>No messages yet.</p>
+
+{% endfor %}
+
+{% endblock %}

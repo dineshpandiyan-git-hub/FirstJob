@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
-from .models import User, Job, Application
+from .models import User, Job, Application, Message
 import PyPDF2
 
 def login_view(request):
@@ -131,4 +131,36 @@ def my_applications(request):
 
     return render(request, "my_applications.html", {
         "applications": applications
+    })
+
+@login_required
+def send_message(request, application_id):
+    application = get_object_or_404(Application, id=application_id)
+
+    if application.job.recruiter != request.user:
+        return redirect('/recruiter/')
+
+    if request.method == "POST":
+        text = request.POST.get("message")
+
+        Message.objects.create(
+            sender=request.user,
+            receiver=application.applicant,
+            job=application.job,
+            message=text
+        )
+
+        return redirect(f'/applicants/{application.job.id}/')
+
+    return render(request, "send_message.html", {
+        "application": application
+    })
+
+
+@login_required
+def messages_page(request):
+    messages = Message.objects.filter(receiver=request.user).order_by('-created_at')
+
+    return render(request, "messages.html", {
+        "messages": messages
     })
