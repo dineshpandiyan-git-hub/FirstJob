@@ -57,19 +57,19 @@ Register Page
 ![Register](Screenshots/Registor.png)
 
 Job Seeker Dashboard
-![Job Seeker Dashboard](Screenshots/Job Seeker Dashboard.png)
+![Job Seeker Dashboard](Screenshots/Job_Seeker_Dashboard.png)
 
 Job Seeker Applications
-![Job Seeker My Applicants](Screenshots/Job Seeker my Applicants.png)
+![Job Seeker Applications](Screenshots/Job_Seeker_Applications.png)
 
 Job Seeker Messages
-![Job Seeker Message](Screenshots/Job Seeker Message.png)
+![Job Seeker Message](Screenshots/Job_Seeker_Message.png)
 
 Recruiter Dashboard 1
-![Recruiter Dashboard 1](Screenshots/Recruiter Dashboard 1.png)
+![Recruiter Dashboard 1](Screenshots/Recruiter_Dashboard_1.png)
 
 Recruiter Dashboard 2
-![Recruiter Dashboard 2](Screenshots/Recruiter Dashboard 2.png)
+![Recruiter Dashboard 2](Screenshots/Recruiter_Dashboard_2.png)
 
 Recruiter Messages
-![Recruiter Message](Screenshots/Recruiter Message.png)
+![Recruiter Message](Screenshots/Recruiter_Message.png)
