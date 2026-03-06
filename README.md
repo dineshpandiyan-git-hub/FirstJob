@@ -60,7 +60,7 @@ Job Seeker Dashboard
 ![Job Seeker Dashboard](Screenshots/Job_Seeker_Dashboard.png)
 
 Job Seeker Applications
-![Job Seeker Applications](Screenshots/Job_Seeker_My_Applications.png)
+![Job Seeker Applications](Screenshots/Job_Seeker_My_Applicants.png)
 
 Job Seeker Messages
 ![Job Seeker Message](Screenshots/Job_Seeker_Message.png)
