@@ -1,13 +1,11 @@
 FirstJob
-AI-Powered Job Matching Platform for Freshers
+An AI-Powered Job Matching Platform for Freshers
 
-FirstJob is a modern AI-powered recruitment platform designed specifically for fresh graduates and entry-level job seekers. The platform intelligently connects recruiters and candidates using automated resume analysis and smart skill-based matching algorithms.
-
-Unlike traditional job portals that rely heavily on manual screening, FirstJob introduces intelligent automation to evaluate resumes, compare required job skills and generate match scores instantly. This helps recruiters make faster and more data-driven hiring decisions while also giving freshers a fair chance to showcase their abilities.
+FirstJob is a modern AI-powered recruitment platform designed specifically for fresh graduates and entry level job seekers. The platform intelligently connects recruiters and candidates using automated resume analysis and smart skill-based matching algorithms. Unlike traditional job portals that rely heavily on manual screening, FirstJob introduces intelligent automation to evaluate resumes, compare required job skills and generate match scores instantly. This helps recruiters make faster and more data driven hiring decisions while also giving freshers a fair chance to showcase their abilities.
 
 Platform Overview
 
-Recruiters can post and manage job openings through a dedicated dashboard. Each job listing includes required skills, job descriptions, and role information. Freshers can browse available job opportunities, upload their resumes in PDF format, receive a match percentage based on their skills, track their application status, and communicate directly with recruiters through the built-in messaging system.
+Recruiters can post and manage job openings through a dedicated dashboard. Each job listing includes required skills, job descriptions and role information. Freshers can browse available job opportunities, upload their resumes in PDF format, receive a match percentage based on their skills, track their application status and communicate directly with recruiters through the built in messaging system.
 
 Core Features
 
